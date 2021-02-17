@@ -1,0 +1,5 @@
+## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+
+
+/**/node_modules/
+## !/test/01-io/node_modules/readline-sync
