@@ -1,9 +1,11 @@
-function getSort1(items) {
+// чистая функция не меняет внешние данные
+
+function getSort1(items) { // не чистая
     return items
         .sort((a, b) => a - b);
 }
 
-function getSort2(items) {
+function getSort2(items) { // чистая
     return items
         .slice() // сделать копию
         .sort((a, b) => a - b);
