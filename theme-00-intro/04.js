@@ -1,23 +1,19 @@
-
-// чистая функция
-let result = Math.pow(2, 3);
+let result = Math.pow(2, 3); // чистая функция
 console.log(result);
 
-// нечистая функция 1
-// берёт данные извне
-function get1(a){
-    return a + b;
-}    
 
+function get1(a) { // нечистая функция 1
+    return a + b; // берёт данные извне
+}    
 let b = 1;
 console.log(get1(10));
 
-// нечистая функция 2
-// меняет внешние данные 
-function get2(user){
-    user.age += 1;
+
+function get2(user) { // нечистая функция 2
+    user.age += 1; // меняет внешние данные 
     return user.age;
 }    
+
 
 let student = {
     name: 'Иван',
@@ -27,6 +23,6 @@ console.log(student);
 console.log(get2(student));
 console.log(student);
 
-// нечистая функция 3
+
+console.log(Math.random()); // нечистая функция 3
 // возвращает разные данные
-console.log(Math.random());

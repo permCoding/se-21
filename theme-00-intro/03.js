@@ -21,6 +21,9 @@ const arr = [9, 0, 66, 4, 4];
 arr.pop();
 arr.push(10);
 
-// console.log(getSort1(arr));
 console.log(getSort2(arr));
-console.log(arr); // массив стал отсортированным
+console.log(arr); // массив остался как был
+
+// console.log(getSort1(arr));
+// console.log(arr); // массив стал отсортированным
+
