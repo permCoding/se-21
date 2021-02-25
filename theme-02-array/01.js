@@ -21,13 +21,13 @@ console.log(
 
 console.log(
     Array(amount)
-    .fill(0)
+        .fill(0)
 );
 
 console.log(
     Array(amount)
-    .fill(0)
-    .map((_, index) => ++index)
+        .fill(0)
+        .map((_, index) => ++index)
 );
 
 console.log(
@@ -35,7 +35,7 @@ console.log(
 );
 
 console.log(
-    [...Array(amount).keys()].map(i => i+1)
+    [...Array(amount).keys()].map(i => ++i)
 );
 
 // статический метод

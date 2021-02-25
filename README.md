@@ -98,9 +98,10 @@
 
 Лекция 02 - 25.02.21  
 [Обработка массивов](https://github.com/permCoding/se-21/tree/main/theme-02-array)  
-[Введение](https://github.com/permCoding/se-21/tree/main/theme-00-intro)  
+Завершили разбор 01.js  
 
 Лекция 02 - 04.03.21  
+[Введение](https://github.com/permCoding/se-21/tree/main/theme-00-intro)  
 [Ввод-вывод](https://github.com/permCoding/se-21/tree/main/theme-01-io)  
 [Функции](https://github.com/permCoding/se-21/tree/main/theme-03-func)  
 [Объекты](https://github.com/permCoding/se-21/tree/main/theme-04-objects)  
