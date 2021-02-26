@@ -19,6 +19,7 @@ npm --version
 
 ---  
 
+[GitHub - Первые шаги](https://youtu.be/axbgYWA8yQM)  
 
 ---  
 
