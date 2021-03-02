@@ -17,6 +17,7 @@
 
 --- 
 
+[ЛАБОРАТОРКИ](LABRAB.md)  
 [Рейтинг группы ПИб-3](https://docs.google.com/spreadsheets/d/189XjCTS8Duof7kzUyPp8pZJd0F9IcxT7rorJR9f3Hnk/edit?usp=sharing)  
 [Контрольные работы на Степике](https://stepik.org/64867/)  
 [Папка с презентациями](https://drive.google.com/drive/folders/1oIwYQdkQ0gjt4PXG1wOf-2JBIxu3rOUT?usp=sharing)  
@@ -105,13 +106,6 @@
 [Ввод-вывод](https://github.com/permCoding/se-21/tree/main/theme-01-io)  
 [Функции](https://github.com/permCoding/se-21/tree/main/theme-03-func)  
 [Объекты](https://github.com/permCoding/se-21/tree/main/theme-04-objects)  
-
----  
-
-## ЛАБОРАТОРКИ
-
-ЛАБРАБ-01 - 04,11.03.21  
-Задачи на Степике - [Тема "Обработка массивов"](https://stepik.org/lesson/416145/)  
 
 ---  
 
