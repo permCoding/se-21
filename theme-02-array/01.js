@@ -21,21 +21,23 @@ console.log(
 
 console.log(
     Array(amount)
-        .fill(0)
+    .fill(0)
 );
 
 console.log(
     Array(amount)
-        .fill(0)
-        .map((_, index) => ++index)
+    .fill(0)
+    .map((_, index) => ++index)
 );
+
+//   --x    x++
 
 console.log(
     [...Array(amount).keys()] // оператор spread ...
 );
 
 console.log(
-    [...Array(amount).keys()].map(i => ++i)
+    [...Array(amount).keys()].map(i => i+1)
 );
 
 // статический метод
@@ -48,5 +50,7 @@ console.log(arr);
 // = = = = = = = = = = 
 
 let arr1 = [1, 2, 3];
-let arr2 = [0, ...arr1, 4, 5]; // spread
+let arr2 = [0, arr1, 4, 5]; // spread
+let arr3 = [0, ...arr1, 4, 5]; // spread
 console.log(arr2);
+console.log(arr3);
