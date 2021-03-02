@@ -1,4 +1,5 @@
 // паттерн для решения задач на степике
+
 // console.log('Ctrl-D for EXIT in Linux');
 // console.log('Ctrl-C for EXIT in Windows');
 
@@ -24,3 +25,12 @@ rl.on('close', () => {
         .reduce((acc, next) => acc + next, 0);
     console.log(result);
 });
+
+/*
+на вход можете подать для проверки эти строки
+4
+600
+25
+66
+27
+*/
