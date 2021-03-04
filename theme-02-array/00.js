@@ -1,10 +1,10 @@
 
-console.log(process.argv)
+console.log(process.argv);
 
 // let nodePath = process.argv[0];
 // let appPath = process.argv[1];
 
-let arr = process.argv.slice(2)
+let arr = process.argv.slice(2);
 if (arr.length > 0) {
     for (let item of arr) {
         console.log(item);
@@ -12,7 +12,7 @@ if (arr.length > 0) {
 
     console.log(arr.reduce((a,b) => a+b));
     console.log(arr
-        .map(item => Number(item))
+        .map((item) => Number(item))
         .reduce((acc,next) => acc+next));
 }
 

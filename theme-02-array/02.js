@@ -2,8 +2,7 @@
 
 let line = '2 3 5 10 8';
 
-let arr = line
-    .split(' ');
+let arr = line.split(' ');
 console.log(arr);
 
 
@@ -43,9 +42,10 @@ console.log(line
 line = '2 3 5 10 8';
 line
     .split(' ')
-    .forEach(x => console.log(x));
+    .forEach(x => console.log(x)); // ничего не возвращает
 arr = [];
 line
     .split(' ')
     .forEach(x => arr.push(Number(x)));
 console.log(arr);
+console.log(...arr);
