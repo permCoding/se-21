@@ -1,4 +1,4 @@
-
+// передать аргументы в программу из консоли
 console.log(process.argv);
 
 // let nodePath = process.argv[0];
