@@ -12,13 +12,14 @@ console.log(arr1);
 console.log(arr2);
 console.log(arr.join(', '));
 console.table(arr.reverse());
+console.log(arr);
 
 // = = = = = = = = = =
 
 console.log(arr2);
-let first = arr2.shift();
+let first = arr2.shift(); // вырезает слева
 console.log(first);
-let len = arr2.unshift(55);
+let len = arr2.unshift(55); // добавляет слева
 console.log(len);
 console.log(arr2.length);   
 console.log(arr2);

@@ -1,3 +1,5 @@
+// чтение/запись через promises + then
+
 fs = require('fs');
 
 fileNameIn = "in.txt";
@@ -34,6 +36,6 @@ promise
             );
         });
     })
-    .then((amount) => 
+    .then((amount) => // then
         console.log(`Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`)
     );

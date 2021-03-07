@@ -40,12 +40,9 @@ console.log(
     [...Array(amount).keys()].map(i => i+1)
 );
 
-// = = = = = = = = = 
-
-console.log('статический метод Array.from');
-
+// статический метод
 arr = Array.from('JavaScript');
-console.log(...arr);
+console.log(arr);
 
 arr = Array.from([0,1,2,3,4], x => x**3);
 console.log(arr);
@@ -55,7 +52,5 @@ console.log(arr);
 let arr1 = [1, 2, 3];
 let arr2 = [0, arr1, 4, 5]; // spread
 let arr3 = [0, ...arr1, 4, 5]; // spread
-
-console.log(arr2 + '\n' + arr3); // неявное приведение в str
-console.log(arr2, '\n', arr3);
-console.log(`$arr2, '\n', arr3`);
+console.log(arr2);
+console.log(arr3);

@@ -1,3 +1,5 @@
+// чтение/запись через promises
+
 fs = require('fs');
 
 fileNameIn = "in.txt";

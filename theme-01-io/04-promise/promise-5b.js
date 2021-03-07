@@ -1,3 +1,5 @@
+// чтение/запись через callback functions
+
 fs = require('fs');
 
 fileNameIn = "in.txt";

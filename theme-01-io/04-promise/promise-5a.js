@@ -1,3 +1,5 @@
+// асинхронное чтение - параллельное
+
 fs = require('fs');
 
 fileNameIn = "in.txt";
