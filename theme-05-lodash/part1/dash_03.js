@@ -43,6 +43,9 @@ let arr, count = 3;
 arr = _.range(0, 15, 3);
 console.log(arr); // => [0, 3, 6, 9, 12]
 
+arr = _.times(count, () => 0); // выполняет callback count-раз, возвращая массив результатов
+console.log(arr); // => ['', '', '']
+
 arr = _.times(count, _.stubString);
 console.log(arr); // => ['', '', '']
 
