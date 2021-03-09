@@ -1,6 +1,14 @@
 # js-lodash
 ## Функциональная библиотека lodash  
 
+Документация: https://lodash.com/docs/4.17.15  
+Сайт библиотеки: https://lodash.com/  
+
+```
+установка
+npm install lodash
+```
+
 Функциональные библиотеки  
 Базовые функции  
 Функциональные принципы  
@@ -9,13 +17,15 @@ Spread + iterators
 csv + lodash + эмуляция запросов  
 
 ---
-
-Сайт библиотеки: https://lodash.com/  
-Документация: https://lodash.com/docs/4.17.15  
-
----
 ## FP libraries for JS  
 ---
+
+Lodash  
+https://lodash.com  
+
+Ramda  
+http://ramdajs.com  
+
 Mori  
 http://swannodette.github.io/mori  
 
@@ -24,12 +34,6 @@ https://immutable-js.github.io/immutable-js/
 
 Underscore  
 http://underscorejs.org  
-
-Lodash  
-https://lodash.com  
-
-Ramda  
-http://ramdajs.com  
 
 ---
 

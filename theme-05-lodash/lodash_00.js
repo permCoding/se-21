@@ -1,6 +1,4 @@
 const _ = require('lodash'); // npm install lodash
-// documentation: https://lodash.com/docs/4.17.15
-
 
 
 console.log('генерация массивов');
