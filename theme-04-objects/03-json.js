@@ -1,3 +1,4 @@
+// JSON не хранит методы
 let source = {
     name: 'Alex',
     age: 22,
@@ -14,3 +15,7 @@ source.age += 1;
 console.log(`source => ${source.toString()}`);
 console.log(`target => ${target.toString()}`);
 console.log('target =>', target);
+
+for (let item in target) {
+    console.log(`item: ${target[item]}`);
+}

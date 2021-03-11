@@ -7,7 +7,7 @@ let func = function () {
         dec: () => { x--; return x; },
         reset: () => { x = 0; return x; }
     }
-}
+} // функция может возвращать объект из функций
 
 
 let counter = func();
