@@ -98,16 +98,21 @@
 [Node.js и Функциональное программирование](https://show.zohopublic.com/publish/lgpre0a1454160d4141e8834b825916cafb31)  
 
 Лекция 02 - 25.02.21  
+[Введение](https://github.com/permCoding/se-21/tree/main/theme-00-intro)  
 [Обработка массивов](https://github.com/permCoding/se-21/tree/main/theme-02-array)  
 Завершили разбор 01.js  
 
 Лекция 03 - 04.03.21  
 [Введение](https://github.com/permCoding/se-21/tree/main/theme-00-intro)  
+[Обработка массивов](https://github.com/permCoding/se-21/tree/main/theme-02-array)  
+Завершили разбор 04.js  
 
 Лекция 04 - 11.03.21  
 О способах сортировки массивов  
 Запись Лекции с Zoom тут: https://youtu.be/S0Fya44s4Lo  
 
+Лекция 05 - 18.03.21  
+Библиотека lodash  
 
 
 Лекции  
