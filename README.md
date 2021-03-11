@@ -101,8 +101,16 @@
 [Обработка массивов](https://github.com/permCoding/se-21/tree/main/theme-02-array)  
 Завершили разбор 01.js  
 
-Лекция 02 - 04.03.21  
+Лекция 03 - 04.03.21  
 [Введение](https://github.com/permCoding/se-21/tree/main/theme-00-intro)  
+
+Лекция 04 - 11.03.21  
+О способах сортировки массивов  
+Запись Лекции с Zoom тут: https://youtu.be/S0Fya44s4Lo  
+
+
+
+Лекции  
 [Ввод-вывод](https://github.com/permCoding/se-21/tree/main/theme-01-io)  
 [Функции](https://github.com/permCoding/se-21/tree/main/theme-03-func)  
 [Объекты](https://github.com/permCoding/se-21/tree/main/theme-04-objects)  
