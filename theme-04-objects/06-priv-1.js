@@ -8,7 +8,7 @@ class Student {
         this._name = line.trim();
     }
     get name() {
-        return this._name;
+        return this._name.trim();
     }
 }
 
@@ -21,3 +21,7 @@ console.log(stud); // через свойство
 
 stud._name = ' Петро ';
 console.log(stud); // через поле - оно public
+
+console.log(stud.name); // через свойство
+
+console.log(stud._name); // через поле

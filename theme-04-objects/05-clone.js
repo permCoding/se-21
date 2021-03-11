@@ -6,7 +6,7 @@ let source = {
     name: 'Alex',
     age: 22,
     toString: function () {
-        return `name: ${this.name}, age: ${this.age}`
+        return `name -> ${this.name}, age -> ${this.age}`
     }
 };
 
