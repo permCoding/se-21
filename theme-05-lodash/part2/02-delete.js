@@ -1,6 +1,8 @@
+// DELETE
+// _.remove() и _.pullAt() - мутабельные
+
 const ut = require('./ut01');
 const _ = require('lodash');
-// _.remove() и _.pullAt() - мутабельные
 
 /**
  * удалить 1 элемент из массива
@@ -24,8 +26,9 @@ const _ = require('lodash');
 
 /**
  * удалить все элементы
- * @param {*} arr 
- * @param {*} name 
+ * @param {String[]} arr массив 
+ * @param {String} name имя куратора 
+ * @return {void} ничего не возвращает
  */
 function del_all(arr, /**String*/ name) {
     console.log(arr);
@@ -48,3 +51,16 @@ let nameCurator = 'Ухова'; // DELETE
 del_one(array, nameCurator);
 
 // del_all(array, nameCurator);
+
+
+// = = = = = = = = = = = = = = 
+
+// ver imperative
+// если нужно удалить всех с такой фамилией, то break убрать
+// for (let i = 0; i<array.length; i++) {
+// 	if (array[i].nameCur == nameCurator) {
+// 		array.splice(i, 1);
+// 		break; 
+// 	}
+// }
+// console.log(array);
