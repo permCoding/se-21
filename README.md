@@ -113,7 +113,7 @@
 Завершили разбор 05-sort.js  
 
 Лекция 05 - 18.03.21  
-Библиотека lodash  
+Библиотека lodash - [ссылка на папку с прогами](https://github.com/permCoding/se-21/tree/main/theme-05-lodash)  
 
 
 Лекции  
