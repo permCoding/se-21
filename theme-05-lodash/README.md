@@ -4,6 +4,10 @@
 Документация: https://lodash.com/docs/4.17.15  
 Сайт библиотеки: https://lodash.com/  
 
+[part1 - базовые способы работы с массивами объектов](/part1/)  
+
+[part2 - csv - json - массивы объектов](/part2/)  
+
 ```
 установка
 npm install lodash
