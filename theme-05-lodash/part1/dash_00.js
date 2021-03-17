@@ -13,9 +13,5 @@ const _ = require('lodash'); // npm install lodash
 
 
 arr = [5, 4, 3, 2, 1,];
-console.log(
-    _
-        .reverse(arr)
-
-);
+console.log(_.reverse(arr));
 console.log(arr); // для контроля

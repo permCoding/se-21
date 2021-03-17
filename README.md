@@ -26,6 +26,8 @@
 [Вопросы для собеседования / Экзамен](questions.md)  
 [HELP ME](HELPME.md)  
 [Полезные ссылки](LINKS.md)  
+[GitHub - первые шаги](https://youtu.be/axbgYWA8yQM)  
+[Как расшарить приватный репозиторий](https://pcoding.ru/pdf/shareGit.pdf)  
 
 ---  
 
