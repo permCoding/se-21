@@ -12,10 +12,9 @@ function _split() {
     let line = '12,     3,8, 9, 10, 2, 1, 1, 1';
     let arr_lines = _.split(line, /,\s*/, 5); // re
     
-    // let arr = arr_lines
-    //     .map(x => parseInt(x));
+    // let arr = arr_lines.map(x => parseInt(x)); // нативно так
     
-    let arr = arr_lines.map(_.parseInt); // так можно
+    let arr = arr_lines.map(_.parseInt); // так можно в lodash
 
     console.log(arr_lines);
     console.log(arr);
