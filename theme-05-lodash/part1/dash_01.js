@@ -9,8 +9,8 @@ const _ = require('lodash');
  * есть split, parseInt
 */
 function _split() {
-    let line = '12,     3, 8, 9, 10, 2, 1, 1, 1';
-    let arr_lines = _.split(line, /,\s+/, 5); // re
+    let line = '12,     3,8, 9, 10, 2, 1, 1, 1';
+    let arr_lines = _.split(line, /,\s*/, 5); // re
     
     // let arr = arr_lines
     //     .map(x => parseInt(x));
@@ -86,10 +86,10 @@ function _reduce() {
 }
 
 
-// _split();
+_split();
 
 // _map();
 
 // _filter();
 
-_reduce();
+// _reduce();
