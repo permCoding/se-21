@@ -1,6 +1,6 @@
-fs = require('fs');
+const fs = require('fs');
 
-let getTxt = fileNameIn => {
+let getTxt = function (fileNameIn) {
     return new Promise((resolve, reject) => {
         fs.readFile( // асинхронное чтение
             fileNameIn, 
@@ -10,7 +10,7 @@ let getTxt = fileNameIn => {
     });
 };
 
-let arrWrite = (fileNameOut, arr) => {
+let saveArr = function (fileNameOut, arr) {
     return new Promise((resolve, reject) => {
         fs.writeFile( // асинхронная запись
             fileNameOut,
@@ -23,31 +23,31 @@ let arrWrite = (fileNameOut, arr) => {
             }
         );
     });
-}
+};
+
+let getArr = function (txt) {
+    return txt
+    .split(/\r\n|\n/)[0]
+    .trim()
+    .split(/\s+/)
+    .map(x => +x)
+    .sort((a,b)=>a-b);
+};
 
 async function exec(fileIn, fileOut) {
-    let txt = await getTxt(fileIn);
-    let arr = txt
-        .split(/\r\n|\n/)[0]
-        .trim()
-        .split(/\s+/)
-        .map(x => +x)
-        .sort((a,b)=>a-b);
+    console.log(`Чтение данных из файла - ${fileIn}`);
+    let txt = await getTxt(fileIn); // только для промисов
+    let arr = getArr(txt); // этот метод сам синхронный
     console.log(`Данные - ${arr.join(', ')}`);
+
     try {
-        await arrWrite(fileOut, arr);
-        console.log(`Записали массив [${arr}] в файл ${fileOut}`);
-        let amount = arr.length;
-        console.log(`Всего чисел - ${amount}`)
+        await saveArr(fileOut, arr); // только для промисов
+        console.log(`- записали массив [${arr}]\n- в файл ${fileOut}\n- всего чисел - ${arr.length}`);
     } catch (error) {
         console.error(`Проблемы с записью.\n`, error);
     } finally {
-        console.log('Работа завершена');
-    }
-    
+        console.log('___ Работа завершена ___');
+    };
 }
 
-fileNameIn = "in.txt";
-fileNameOut = "out.txt";
-
-exec(fileNameIn, fileNameOut);
+exec("in.txt", "out.txt"); // fileNameIn -> fileNameOut
