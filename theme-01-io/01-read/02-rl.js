@@ -1,6 +1,6 @@
-var readline = require('readline');
+const readline = require('readline');
 
-var rl = readline.createInterface({
+let rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
@@ -14,6 +14,9 @@ let num;
 
 rl.on('line', function(line){
     num = Number(line);
-}).on('close', () => {
-    console.log("это число " + ["чётное", "нечётное"][num%2]);
+});
+
+rl.on('close', () => {
+    result = num%2 == 0? "чётное": "нечётное";
+    console.log("это число " + result);
 });

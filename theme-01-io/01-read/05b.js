@@ -1,6 +1,6 @@
-fs = require('fs'); // создаём объект
+const fs = require('fs'); // создаём объект
 
-fileName = "data.txt"; // имя файла
+let fileName = "data-in.txt"; // имя файла
 
 myFunc = function(error, line) {
     console.log("Асинхронное чтение файла");

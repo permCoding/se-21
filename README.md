@@ -55,6 +55,7 @@
 
 Лекция 05 - 18.03.21  
 Библиотека lodash - [lodash - part1](https://github.com/permCoding/se-21/tree/main/theme-05-lodash)  
+Остановились на разборе 01_map.js на методе split  
 
 Лекция 06 - 25.03.21  
 Библиотека lodash - [lodash - part2](https://github.com/permCoding/se-21/tree/main/theme-05-lodash)  

@@ -1,7 +1,5 @@
 // асинхронное чтение
 
-console.log('+ + +');
-
 require("fs") // объект для работы с файлами
     .readFile("input.txt", "utf-8", (err, data) => {
         if (err) throw err;
@@ -13,5 +11,3 @@ require("fs") // объект для работы с файлами
             .sort((a, b) => a-b) // сортируем    
         );
     }); // читаем файл
-
-console.log('- - -');
