@@ -1,6 +1,6 @@
 // узнать место в отсортированном списке
 
-const _ = require('lodash');
+const _ = require('lodash'); // CommonJS
 
 
 const objects = [

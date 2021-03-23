@@ -11,3 +11,11 @@ let arr = _
 
 console.table(arr);
 console.log(arr);
+
+arr = _(colors)
+        .zip(hex_names)
+        .orderBy([0], ['asc'])
+        .value();
+
+console.table(arr);
+console.log(arr);

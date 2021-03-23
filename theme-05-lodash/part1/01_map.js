@@ -4,17 +4,19 @@
 const _ = require('lodash');
 
 
-/** разбор метода _.split()  
+/**
+ * разбор метода _.split()  
  * нативный map - метод массива  
  * есть split, parseInt
-*/
+ */
 function _split() {
-    let line = '12,     3,8, 9, 10, 2, 1, 1, 1';
-    let arr_lines = _.split(line, /,\s*/, 5); // re
+    let line = '12,     3, 8, 9, 10, 2, 1, 1, 1';
+    // line.split(' ');
+    let arr_lines = _.split(line, /,\s+/, 5); // re
     
-    // let arr = arr_lines.map(x => parseInt(x)); // нативно так
+    let arr = arr_lines.map(x => parseInt(x)); // нативно так
     
-    let arr = arr_lines.map(_.parseInt); // так можно в lodash
+    // let arr = arr_lines.map(_.parseInt); // так можно в lodash
 
     console.log(arr_lines);
     console.log(arr);
@@ -69,7 +71,7 @@ function _reduce() {
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let add_odd = (acc, next) => next%2 != 0? acc + next: acc;
     let acc_odd = _.reduce(arr, add_odd, 0);
-    console.log(acc_odd);    
+    console.log(acc_odd);
 
     function reduce(array, func, acc) {
         let i = -1;
@@ -85,10 +87,12 @@ function _reduce() {
 }
 
 
-_split();
+console.log('\x1Bc');
+
+// _split();
 
 // _map();
 
 // _filter();
 
-// _reduce();
+_reduce();
