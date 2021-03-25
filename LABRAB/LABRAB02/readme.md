@@ -1,7 +1,7 @@
 # LABRAB02
 
-ЛАБРАБ-02 - 18,25.03.21  
-_deadline 27.03.21 24:00_  
+ЛАБРАБ-02 - 01,08.04.21  
+_deadline 10.04.21 24:00_  
 
 ## Немного теории о JavaScript Object Notation (JSON)  
 
