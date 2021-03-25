@@ -34,4 +34,3 @@ console.log(func.toString());
 console.log(func_bind.toString());
 console.log(get_sum.toString());
 console.log(inc.toString());
-

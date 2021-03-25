@@ -51,7 +51,5 @@ console.log('= = = = = = = = = = = = = ');
 
 console.log(Math.max(1, 33, 6, 9));
 console.log(Math.max([1, 33, 6, 9]));
+console.log(Math.max(...[1, 33, 6, 9]));
 console.log(Math.max.apply(null, [1, 33, 6, 9]));
-
-
-
