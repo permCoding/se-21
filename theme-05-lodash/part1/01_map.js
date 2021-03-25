@@ -10,13 +10,13 @@ const _ = require('lodash');
  * есть split, parseInt
  */
 function _split() {
-    let line = '12,     3, 8, 9, 10, 2, 1, 1, 1';
+    let line = '12,     3, 8,9,10, 2, 1, 1, 1';
     // line.split(' ');
-    let arr_lines = _.split(line, /,\s+/, 5); // re
+    let arr_lines = _.split(line, /,\s*/, 5); // re
     
-    let arr = arr_lines.map(x => parseInt(x)); // нативно так
+    // let arr = arr_lines.map(x => parseInt(x)); // нативно так
     
-    // let arr = arr_lines.map(_.parseInt); // так можно в lodash
+    let arr = arr_lines.map(_.parseInt); // так можно в lodash
 
     console.log(arr_lines);
     console.log(arr);
@@ -50,10 +50,11 @@ function _map() {
 /** разбор метода _.filter() */
 function _filter() {
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    let check_odd = x => x%2 != 0;
+    let check_odd = x => x%2 != 0; 
     let nums_odd = _.filter(arr, check_odd);
     console.log(nums_odd);
     console.log(_.filter(arr, x => x%2)); // приведение типов
+    // +'23'
 
     function filter(array, func) {
         let new_arr = [];
