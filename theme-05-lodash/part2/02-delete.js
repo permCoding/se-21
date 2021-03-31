@@ -1,27 +1,27 @@
 // DELETE
+// задача объект из массива по признаку
 // _.remove() и _.pullAt() - мутабельные
 
-const ut = require('./ut01');
+const ut = require('./ut00');
 const _ = require('lodash');
 
 /**
- * удалить 1 элемент из массива
- * @param {String[]} arr массив 
+ * удалить первый найденный элемент из массива
+ * @param {String[]} arr массив имён кураторов 
  * @param {String} name имя куратора 
  * @return {void} ничего не возвращает
  */
  function del_one(arr, name) {
-    console.log(arr);
-    console.log('= '.repeat(12));
+    console.log(arr); console.log(' = '.repeat(10));
     
     let index = _
         .findIndex(arr, item => item.nameCur == name);
-    let obj = _.pullAt(arr, index);
+    // let obj = _.pullAt(arr, index);
+    let nums = [index, index+1];
+    let obj = _.pullAt(arr, ...nums);
     
     console.log(arr);
-    console.log('= '.repeat(12));
     console.log(obj); // тут кто был удалён
-    console.log('= '.repeat(12));
 }
 
 /**
@@ -31,36 +31,34 @@ const _ = require('lodash');
  * @return {void} ничего не возвращает
  */
 function del_all(arr, /**String*/ name) {
-    console.log(arr);
-    console.log('= '.repeat(12));
+    console.log(arr); console.log(' = '.repeat(10));
 
     let new_arr = _
         .remove(arr, item => item.nameCur == name);
 
     console.log(arr);
-    console.log('= '.repeat(12));
     console.log(new_arr); // тут кто был удалён
-    console.log('= '.repeat(12));
 }
 
 
-let array = ut.csv_to_json('./csv/curators.csv');
+console.log('\x1Bc');
 
+let array = ut.csv_to_json('./csv/curators.csv');
 let nameCurator = 'Ухова'; // DELETE
 
-del_one(array, nameCurator);
+// del_one(array, nameCurator);
+del_all(array, nameCurator);
 
-// del_all(array, nameCurator);
+
 
 
 // = = = = = = = = = = = = = = 
 
 // ver imperative
-// если нужно удалить всех с такой фамилией, то break убрать
 // for (let i = 0; i<array.length; i++) {
 // 	if (array[i].nameCur == nameCurator) {
 // 		array.splice(i, 1);
-// 		break; 
+// 		break; // если нужно удалить всех с такой фамилией, то break убрать
 // 	}
 // }
 // console.log(array);

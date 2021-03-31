@@ -1,5 +1,5 @@
 const fs = require('fs');
-const csvjson = require('csvjson'); // npm install csvjson
+const csvjson = require('csvjson'); // npm i csvjson
 
 
 function csv_to_json(nameFile, del = ',') {
@@ -9,3 +9,4 @@ function csv_to_json(nameFile, del = ',') {
 
 
 module.exports.csv_to_json = csv_to_json;
+// module.exports.to_json = csv_to_json;

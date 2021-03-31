@@ -3,7 +3,7 @@
 // либо читать заново, либо копировать...
 // _.cloneDeep()
 
-const ut = require('./ut01');
+const ut = require('./ut00');
 const _ = require('lodash');
 
 let array = ut.csv_to_json('./csv/students.csv');

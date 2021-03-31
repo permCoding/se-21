@@ -1,4 +1,4 @@
-// UPDATE заменить номер крусатора в группе
+// UPDATE заменить номер куратора в группе
 
 const ut = require('./ut05');
 const _ = require('lodash');
