@@ -55,8 +55,8 @@ function _filter() {
     let check_odd = x => x%2 != 0;
     let res = _(arr)
         .filter(check_odd) // это генератор
-        .toString(); // приведём к строке
-        // .value(); // или к массиву
+        // .toString(); // приведём к строке
+        .value(); // или к массиву
     console.log(res);
 }
 
@@ -66,22 +66,22 @@ function _filter_ex() {
     let res = _(users)
         .filter(u => u.email.split('.').pop() === 'biz')
         .map(obj => _.zipObject(['name', 'email'], [obj.name, obj.email]))
-        .orderBy('name', 'desc')        
+        .orderBy(['name'], ['desc'])        
         .value();
     console.table(res);
 }
 
 
 function _reduce() {
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let arr = [10, 2, 3, 4, 5, 6, 7, 8, 9];
     let add_odd = (acc, next) => next%2 != 0? acc + next: acc;
-    console.log(_(arr).reduce(add_odd));
+    console.log(_(arr).reduce(add_odd, 0)); // инициализировать начальное acc
 }
 
 
 console.log('\x1Bc');
 
-_split();
+// _split();
 
 // _map();
 
@@ -89,4 +89,4 @@ _split();
 
 // _filter_ex();
 
-// _reduce();
+_reduce();
