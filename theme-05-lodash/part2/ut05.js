@@ -11,8 +11,8 @@ class Hobby {
 }
 
 let Hobby_ = function (id, name) {
-	// return {id, name};
-	return {id: +id, name: name};
+	return {id, name};
+	// return {id: +id, name: name};
 };
 
 function csv_to_json(nameFile, del = ',') {
@@ -23,7 +23,7 @@ function csv_to_json(nameFile, del = ',') {
 function write_to_csv(array, nameFile) {
 	let fw = fs.createWriteStream(nameFile);
 	fastcsv
-		.write(array, { headers: true })
+		.write(array, {headers:true})
 		.pipe(fw);
 }
 

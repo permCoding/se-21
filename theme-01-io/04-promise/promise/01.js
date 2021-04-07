@@ -5,7 +5,7 @@ fs = require('fs');
 fileNameIn = "in.txt";
 fileNameOut = "out.txt";
 
-let arr = [];
+let arr = []; // тут будет массив чисел из файла
 
 fs.readFile( // асинхронное чтение
     fileNameIn, 
@@ -29,6 +29,7 @@ fs.writeFile( // асинхронная запись
     (err) => { 
         if (err) throw err;
         let amount = arr.length;
-        console.log(`Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`);
+        console.log(`Записали данные в файл ${fileNameOut}`);
+        console.log(`Всего чисел - ${amount}`);
     }
 );

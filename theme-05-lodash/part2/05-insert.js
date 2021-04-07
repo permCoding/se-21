@@ -19,8 +19,6 @@ function insert_2(array, item) {
 
 function insert_3(array, item) {
 	let max_id = _(array).maxBy(item => item.id).id;
-    // let max_id = _.maxBy(array, item => item.id).id;
-	// let next = +max_id + 1;
 	let next = ++max_id;
 	array.push(new ut.Hobby(next, item));
 }

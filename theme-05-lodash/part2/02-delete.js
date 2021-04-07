@@ -12,13 +12,10 @@ const _ = require('lodash');
  * @return {void} ничего не возвращает
  */
  function del_one(arr, name) {
-    console.log(arr); console.log(' = '.repeat(10));
-    
-    let index = _
-        .findIndex(arr, item => item.nameCur == name);
-    // let obj = _.pullAt(arr, index);
-    let nums = [index, index+1];
-    let obj = _.pullAt(arr, ...nums);
+    let index = _.findIndex(arr, item => item.nameCur === name);
+    let obj = _.pullAt(arr, index);
+    // let nums = [index, index+1];
+    // let obj = _.pullAt(arr, ...nums);
     
     console.log(arr);
     console.log(obj); // тут кто был удалён
@@ -31,17 +28,14 @@ const _ = require('lodash');
  * @return {void} ничего не возвращает
  */
 function del_all(arr, /**String*/ name) {
-    console.log(arr); console.log(' = '.repeat(10));
-
-    let new_arr = _
-        .remove(arr, item => item.nameCur == name);
+    let new_arr = _.remove(arr, item => item.nameCur === name);
 
     console.log(arr);
     console.log(new_arr); // тут кто был удалён
 }
 
 
-console.log('\x1Bc');
+console.log('\x1Bc'); // очистить терминал
 
 let array = ut.csv_to_json('./csv/curators.csv');
 let nameCurator = 'Ухова'; // DELETE
@@ -50,13 +44,11 @@ let nameCurator = 'Ухова'; // DELETE
 del_all(array, nameCurator);
 
 
-
-
 // = = = = = = = = = = = = = = 
 
 // ver imperative
 // for (let i = 0; i<array.length; i++) {
-// 	if (array[i].nameCur == nameCurator) {
+// 	if (array[i].nameCur === nameCurator) {
 // 		array.splice(i, 1);
 // 		break; // если нужно удалить всех с такой фамилией, то break убрать
 // 	}

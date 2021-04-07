@@ -2,9 +2,9 @@ const fs = require('fs');
 const csvjson = require('csvjson'); // npm i csvjson
 
 
-function csv_to_json(nameFile, del = ',') {
-	let textCSV = fs.readFileSync(nameFile, 'utf-8');
-	return csvjson.toObject(textCSV, { delimiter: del });
+function csv_to_json(nameFile, del=',') {
+	let textCSV = fs.readFileSync(nameFile, {encoding:'utf8'});
+	return csvjson.toObject(textCSV, {delimiter:del});
 }
 
 

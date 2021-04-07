@@ -19,7 +19,7 @@ arr = txt
     .map(x => +x)
     .sort((a,b)=>a-b);
 
-console.log(`Данные из файла - ${arr.join(', ')}`);
+console.log(`1 Данные из файла - ${arr.join(', ')}`);
 
 fs.writeFileSync( // синхронная запись
     fileNameOut,
@@ -28,6 +28,5 @@ fs.writeFileSync( // синхронная запись
 );
 
 let amount = arr.length;
-console.log(
-    `Записали данные в файл ${fileNameOut}\nВсего чисел - ${amount}`
-);
+console.log(`2 Записали данные в файл ${fileNameOut}`);
+console.log(`3 Всего чисел - ${amount}`);

@@ -1,5 +1,5 @@
 // SELECT age, name 
-// FROM student 
+// FROM students 
 // WHERE sex = true 
 // ORDER BY age DESC, name ASC
 
@@ -14,7 +14,7 @@ function select_1(array) {
                 array, obj => obj.sex == true
             ), obj => obj.age
         )
-    ).forEach(obj => console.log(obj.age, obj.nameSt));
+    ).forEach((obj,ind) => console.log(ind, obj.age, obj.nameSt));
 }
 
 function select_2(array) {
@@ -63,14 +63,14 @@ function select_7(array) {
 }
 
 
-console.log('\x1Bc\n = = = = = = = = = = =');
+console.log('\x1Bc');
 let students = ut.csv_to_json('./csv/students.csv');
 
 // select_1(students);
 // select_2(students);
-select_3(students);
+// select_3(students);
 // select_4(students);
 // select_5(students);
 
 console.log(select_6(students));
-console.log(select_7(students));
+// console.log(select_7(students));
