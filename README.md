@@ -61,6 +61,20 @@
 Библиотека lodash - [lodash - part2](https://github.com/permCoding/se-21/tree/main/theme-05-lodash)  
 Остановились на разборе 02_nota.js на методе split  
 
+Лекция 07 - 01.04.21  
+Библиотека lodash - [lodash - part2](https://github.com/permCoding/se-21/tree/main/theme-05-lodash)  
+Остановились на разборе 02_nota.js на методе split  
+
+Лекция 08 - 08.04.21  
+Часть 2 Обработка табличной информации csv методами lodash node.js  
+https://youtu.be/IiWgq3PPfIM  
+
+Лекция 09 - 15.04.21  
+phpMyAdmin  
+
+Лекция 10 - __.04.21  
+MySQL  
+
 ...  
 
 Лекции  
