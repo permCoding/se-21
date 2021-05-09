@@ -1,4 +1,4 @@
-id,nameSt,sex,age,idGr
+id,nameSt,gender,age,keyGr
 1,Иванов,1,22,1
 2,Петров,1,17,1
 3,Сидов,1,17,2

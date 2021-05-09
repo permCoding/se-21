@@ -1,4 +1,5 @@
 // вставим в таблицу одну запись
+// id NULL без NULL
 
 const ut = require('./modules/utils');  
 

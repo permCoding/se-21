@@ -1,4 +1,4 @@
-// 
+// сделаем функцию и спрячем в модуль
 
 const ut = require('./modules/utils');
 

@@ -1,6 +1,4 @@
-// создадим сначала через phpMyAdmin таблицу
-// и там же через запрос добавим данные
-// тут проверим доступ к данным
+// тут проверим асинхронность запросов к БД
 
 const mysql = require("mysql2"); // npm i mysql2
 
@@ -23,6 +21,6 @@ conn.query("SELECT lastName, rating FROM abiturs", (err, results) => {
     // conn.end();
 });
 
-console.table(rows);
+console.table(rows); // этот сработает раньше
 
 conn.end();
