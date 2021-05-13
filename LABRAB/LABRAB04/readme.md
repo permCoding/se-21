@@ -89,11 +89,11 @@ task_03. Напишите программу, которая будет удал
 
 task_04. Напишите программу, которая будет считывать все данные из файла **data_set.csv** и добавлять их в виде записей в таблицу **data_set** базы данных.  
 
-> Пример [14-insmany.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#14-insmanyjs)  
+> Пример [14-insmany.js](../../theme-06-MySQL/part2-SQL/readme.md#14-insmanyjs)  
 
 task_05. Напишите программу, которая будет узнавать через SQL-запрос и выводить на экран общее количество записей в таблице **data_set**.  
 
-> Пример [05-count.js](https://github.com/permCoding/nodejs21/blob/main/theme-06-MySQL/introLibMySQL2.md#05-countjs)  
+> Пример [05-count.js](../../theme-06-MySQL/part2-SQL/readme.md#05-countjs)  
 
 task_06. Напишите программу, которая будет выводить на экран все записи по клиенту 'laura abc'.  
 

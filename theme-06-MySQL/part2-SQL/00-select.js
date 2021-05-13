@@ -1,6 +1,7 @@
 // создадим сначала через phpMyAdmin таблицу
 // и там же через запрос добавим данные
 // тут проверим доступ к данным
+// через функцию обратного вызова
 
 const mysql = require("mysql2"); // npm i mysql2
 
@@ -15,6 +16,6 @@ const conn = mysql.createConnection({
 conn.query("SELECT lastName, rating FROM abiturs", (err, results, fields) => {
     if (err) console.error(err);
     console.table(results);
-    // console.log(fields);
+    console.log(fields);
     conn.end();
 });
