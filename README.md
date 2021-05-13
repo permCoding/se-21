@@ -79,7 +79,7 @@ MySQL
 MySQL  
 
 Лекция 12 - 27.05.21  
-MySQL  
+regular expressions  
 
 ...  
 
