@@ -1,6 +1,7 @@
 // узнать количество записей в таблице
 // чтобы понять передачу параметров в [rows,fields]
 // смотри swap.js
+// через then можно передавать обычные параметры и промисы
 
 const get_conn = require('./modules/utils').get_conn;
 
@@ -15,7 +16,7 @@ const conn = get_conn();
 
 conn.promise()
     .query("SELECT COUNT(*) FROM abiturs")
-    .then(([rows]) => { return rows[0]['COUNT(*)']; })
-    .then((count) => { console.log('count =', count) })
+    .then(([rows]) => { return rows[0]['COUNT(*)']; }) // отсюда
+    .then((count) => { console.log('count =', count) }) // сюда
     .catch((err) => { console.error(err) })
     .then(conn.end());

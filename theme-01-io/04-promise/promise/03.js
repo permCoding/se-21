@@ -24,7 +24,7 @@ let promise = new Promise((resolve, reject) => {
 promise
     .then((arr) => {
         console.log(`Данные - ${arr.join(', ')}`);
-        let promise2 = new Promise((resolve, reject) => {
+        let promise2 = new Promise((resolve, reject) => { // разрешить, отклонить
             fs.writeFile( // асинхронная запись
                 fileNameOut,
                 arr.join(', '),
