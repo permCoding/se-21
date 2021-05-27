@@ -11,6 +11,7 @@ const pool = mysql.createPool({
 });
 
 const app = express();
+
 app.use('/css', express.static(__dirname + '/css'));
 app.set("view engine", "hbs"); // Handlebars
 
